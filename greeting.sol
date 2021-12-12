@@ -1,4 +1,6 @@
-pragma solidity ^0.4.22;
+// SPDX-License-Identifier: UNLICENSED
+pragma solidity ^0.8.7;
+
 
 contract Greeter {
     string greeting;
@@ -9,12 +11,12 @@ contract Greeter {
         _;
     }
     
-    constructor(string _greeting) public {
+    constructor(string memory _greeting) {
         greeting = _greeting;
         owner = msg.sender;
     }
 
-    function sayHello() public view returns(string) {
+    function sayHello() public view returns(string memory) {
         if (isOwner()) {
             return "Hello, you are my owner";
         } else {
@@ -22,7 +24,7 @@ contract Greeter {
         }
     }
 
-    function setGreeting(string _newGreeting) public onlyOwner {
+    function setGreeting(string memory _newGreeting) public onlyOwner {
         greeting = _newGreeting;
     }
     
