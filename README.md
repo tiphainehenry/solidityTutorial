@@ -28,3 +28,6 @@ Now try using the Ropsten public test network (team up with someone else)!
 
 We have been asked by the marketing department to provide analytics and benchmarkings see how popular our new smart contact is.
 They want a way to count the number of times other people (not the owner) clicks on our function: sayHello()
+
+
+Tutorial inspired from https://raw.githubusercontent.com/holyxhellx/
